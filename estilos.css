@@ -87,43 +87,43 @@ h1{
     transform: scale(1.05);
 }
 .item1{
-    background-image: url(../PROYECTO/multimedia/dalma.jpg);
+    background-image: url(./multimedia/dalma.jpg);
     background-position: center;
     background-size: cover;
 }
 .item2{
-    background-image: url(../PROYECTO/multimedia/DISENO\ DE\ MARCA\ DALMA.jpg);
+    background-image: url(./multimedia/DISENO\ DE\ MARCA\ DALMA.jpg);
     background-position: center;
     background-size: cover;
 }
 .item3{
-    background-image: url(../PROYECTO/multimedia/esav.jpg);
+    background-image: url(./multimedia/esav.jpg);
     background-position: center;
     background-size: cover;
     width: 534px;
 }
 .item4{
-    background-image: url(../PROYECTO/multimedia/flyer.jpg);
+    background-image: url(./multimedia/flyer.jpg);
     background-position: center;
     background-size: cover;
 }
 .item5{
-    background-image: url(../PROYECTO/multimedia/kimora.jpg);
+    background-image: url(./multimedia/kimora.jpg);
     background-position: center;
     background-size: cover;
 }
 .item6{
-    background-image: url(../PROYECTO/multimedia/MARCA\ MALIBU.jpg);
+    background-image: url(./multimedia/MARCA\ MALIBU.jpg);
     background-position: center;
     background-size: cover;
 }
 .item7{
-    background-image: url(../PROYECTO/multimedia/MOCKUP\ LOLA\ FEED.jpg);
+    background-image: url(./multimedia/MOCKUP\ LOLA\ FEED.jpg);
     background-position: center;
     background-size: cover;
 }
 .item8{
-    background-image: url(../PROYECTO/multimedia/tags\ malibu.jpg);
+    background-image: url(./multimedia/tags\ malibu.jpg);
     background-position: center;
     background-size: cover;
 }
