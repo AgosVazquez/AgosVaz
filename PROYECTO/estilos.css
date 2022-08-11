@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilos del header*/
+header{
+    background-color: gold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.logo{
+    color: black;
+    font-size: 30px;
+    float: left;
+    margin-left: 41px;
+    margin-top: 9px;
+}
+.barra{
+    float: right;
+    margin-top: 17px;
+    padding-right: 61px;
+}
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.barra a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.barra a:hover{
+    color: goldenrod;
+}
+/*Estilos del main de index*/ 
+main{
+    
+    width: 100%;
+    background-color: black;
+    height: 470px;
+}
+main img{
+    width: 310px;
+    margin-left: 273px;
+    margin-top: 65px;
+}
+.call{
+    color: white;
+    width: 50%;
+    float: right;
+    padding: 79px;
+    margin-top: 8px;
+    margin-right: 89px;
+}
+h1{
+    color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+.call p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+/*Estilos del main de portfolio*/
+
+.galeria{
+    background-color: black;
+    min-height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 10px;
+    grid-gap: 8px;
+}
+.item{
+    border-radius: 16px;
+    border: 5px solid black;
+}
+.item:hover{
+    transform: scale(1.05);
+}
+.item1{
+    background-image: url(../PROYECTO/multimedia/dalma.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item2{
+    background-image: url(../PROYECTO/multimedia/DISENO\ DE\ MARCA\ DALMA.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item3{
+    background-image: url(../PROYECTO/multimedia/esav.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 534px;
+}
+.item4{
+    background-image: url(../PROYECTO/multimedia/flyer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item5{
+    background-image: url(../PROYECTO/multimedia/kimora.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item6{
+    background-image: url(../PROYECTO/multimedia/MARCA\ MALIBU.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item7{
+    background-image: url(../PROYECTO/multimedia/MOCKUP\ LOLA\ FEED.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item8{
+    background-image: url(../PROYECTO/multimedia/tags\ malibu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*Estilos del main de servicios*/
+.servicios{
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-top: 179px;
+    margin-left: 330px;
+}
+.servicios2{
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float:right;
+    margin-top: 179px;
+    margin-right: 290px;
+}
+/*Estilos del main de contacto*/
+main h2{
+    color: white;
+    text-align: center;
+    padding: 17px;
+}
+main h3{
+    color: white;
+    text-align: center;
+}
+main form{
+    color: white;
+    text-align: left;
+    margin-left: 349px;
+    margin-top: 50px;
+}
+main iframe{
+    float: right;
+    margin-top: -178px;
+    margin-right: 229px;
+}
+
+/*estilos footer*/ 
+footer .redes{
+    font-size: 18px;
+}
+footer p{
+   margin-bottom: 4px;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    background-color: gold;
+    padding: 13px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+@media only screen and (min-width:360px){
+    .galeria{ 
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .galeria{
+        grid-template-columns: repeat(3, 1rf);
+    }
+    .item1{
+        grid-column: 1/3; 
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .item7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item8{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+@media only screen and (min-width:768px){
+    .galeria{
+        grid-template-columns: repeat(4, 1rf);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "img1 img2 img3 img3"
+                             "img1 img4 img5 img6"
+                             "img7 img4 img8 img8";
+    }
+    .item1{
+        grid-area: img1;
+    }
+    .item2{
+        grid-area: img2;
+    }
+    .item3{
+        grid-area: img3;
+    }
+    .item4{
+        grid-area: img4;
+    }
+    .item5{
+        grid-area: img5;
+    }
+    .item6{
+        grid-area: img6;
+    }
+    .item7{
+        grid-area: img7;
+    }
+    .item8{
+        grid-area: img8;
+    }
+}
